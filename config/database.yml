@@ -6,7 +6,7 @@
 development: 
   adapter: postgresql
   encoding: unicode
-  database: fft
+  database: bp
   pool: 5
   username: zachferland
   password:
@@ -19,7 +19,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: fft_test
+  database: bp_test
   pool: 5
   username: zachferland
   password:
@@ -29,7 +29,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: fft_production
+  database: bp_production
   pool: 5
   username: zachferland
   password:
