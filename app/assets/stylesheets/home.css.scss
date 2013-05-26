@@ -23,18 +23,21 @@ h2 {
 	
 }
 
-.bgc {
-	padding: 50px 0;
-}
-
-.bio{
-	font-weight: 200;
+.hide {
+	display: none;
 }
 
  p {
 	font-weight: 200;
 	font-size: 1.125em;
 	line-height: 1.6;
+}
+
+.title-text h2 {
+	font-size: 60px;
+	color: #fa5c58;
+	text-transform: uppercase;
+	font-weight: 100;
 }
 
 .header {
@@ -97,7 +100,6 @@ h2 {
 
 }
 
-
 .personal {
 	background: image-url('zach.png') no-repeat;
 	width: 240px;
@@ -105,6 +107,46 @@ h2 {
 	margin-top: -110px;
 }
 
+// Blog Post -----------------------------------------
+
+.blog-post {
+	height: 529px;
+	padding-top: 110px;
+
+	.image {
+		width: 300px;
+		height: 300px;
+		float: left;
+	}
+
+	.title-text {
+		margin-top: 50px;
+		margin-bottom: 43px;
+	}
+
+	.post {
+		color: #695f5e;
+		width: 600px;
+		float: left;
+		margin: 40px 0 0 82px;
+
+		.title {
+			font-size: 35px;
+			font-weight: 200;
+			margin-bottom: 28px;
+			text-transform: uppercase;
+		}
+
+		.snippet {
+			font-size: 16px;
+			font-weight: 300;
+			letter-spacing: 1px;
+			line-height: 23px;
+		}
+	}
+}
+
+/////////////////
 
 // Location -----------------------------------------
 
@@ -145,8 +187,7 @@ h2 {
 	}
 }
 
-// ///////////////
-
+/////////////////
 
 // Connect -----------------------------------------
 
@@ -155,14 +196,10 @@ h2 {
 	height: 615px;
 	width: 100%;
 
-	.text {
+	.title-text {
 		width: 250px;
 
 		h2 {
-			font-size: 60px;
-			color: #fa5c58;
-			text-transform: uppercase;
-			font-weight: 100;
 			margin-top: 93px;
 		}
 	}
@@ -172,7 +209,6 @@ h2 {
 		width: 255px;
 		background-color: #fa5c58;
 		float: left;
-		margin: 20px 20px 0 0;
 		border-bottom: 10px solid #dd514e;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -198,6 +234,12 @@ h2 {
 		background-image:  image-url('blog.png');
 	}
 }
+
+
+
+
+
+
 
 // Connect -----------------------------------------
 
@@ -251,6 +293,129 @@ footer {
 		}
 
 	}
+
+	.email-button:hover {
+		background-color: #e4504d;
+		cursor: pointer;
+	}
+
+	.email-button:active {
+		border-bottom: none;
+		height: 45px;
+		margin-top: 134px;
+	}
+}
+
+
+.button-read {
+	height: 50px;
+	width: 200px;
+	background-color: #dd514e;
+	border-bottom: 6px solid #c34845;
+	text-transform: uppercase;
+	float: right;
+	margin-top: 36px;
+	margin-right: 36px;
+
+	.text-button {
+		color: #fff;
+		text-align: center;
+		padding-top: 15px;
+		letter-spacing: 1px;
+		display: block;
+	}
+
+}
+
+.button-read:hover {
+		background-color: #e4504d;
+		cursor: pointer;
+	}
+
+	.button-read:active {
+		border-bottom: none;
+		height: 45px;
+		margin-top: 41px;
+	}
+
+
+// CSS FLIP ANIMATION
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	perspective: 1000;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	height: 255px;
+	width: 255px;
+	margin: 20px 20px 0 0;
+	float: left;
+	cursor: pointer;
+}
+
+.back .twitter {
+	background-color: #289bd0;
+	border-bottom: 10px solid #289bd0;
+}
+
+.back .github {
+	background-color: #313030;
+	border-bottom: 10px solid #313030;
+}
+
+.back .linkedin {
+	background-color: #0f61ad;
+	border-bottom: 10px solid #0f61ad;
+}
+
+.back .dribble {
+	background-color: #e90081;
+	border-bottom: 10px solid #e90081;
+}
+
+
+/* flip speed goes here */
+.flipper {
+	-webkit-transition: 0.6s;
+-webkit-transform-style: preserve-3d;
+-moz-transition: 0.6s;
+-moz-transform-style: preserve-3d;
+transition: 0.6s;
+transform-style: preserve-3d;
+position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+backface-visibility: hidden;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+-webkit-transform: rotateY(180deg);
+-moz-transform: rotateY(180deg);
+transform: rotateY(180deg);
 }
 
 

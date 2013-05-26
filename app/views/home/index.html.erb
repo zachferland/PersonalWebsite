@@ -1,3 +1,5 @@
+
+
 <div class="header">
 	<div class="row">
 		<div class="logo center"></div>
@@ -5,7 +7,7 @@
 	<div class="row">
 		<div class="content small-10 small-centered columns">
 			<h1>Zach Ferland</h1>
-			<h3>Designer and Developer, Currently at TechStars, Building things</h3>
+			<h3>designer and developer, currently at techstars, building things</h3>
 		</div>		
 	</div>
 
@@ -18,20 +20,29 @@
 <div id="red-bar"></div>
 
 <div class="blog-post">
-	<div class="header">
-		<h2>Most recent blog post</h2>
-	</div>
 
-	<div class="image">
+	<div class="row">
 		
-	</div>
-
-	<div class="post">
-		<div class="title">Writing Blog post suck</div>
-
-		<div class="snippet"></div>
-
-		<div class="read-more"></div>
+		<!-- <div class="title-text">
+			<h2>Recent Blog Post</h2>
+		</div> -->
+	
+		<div class="image">
+			<%= image_tag "blog-image.png" %>
+			
+		</div>
+	
+		<div class="post">
+			<div class="title">Blog Posts Coming Soon</div>
+	
+			<div class="snippet">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Phasellus nec lacinia mi. Donec eleifend elit eu ligula porttitor porttitor accumsan risus tempus. Pellentesque sapien augue, suscipit eu interdum nec, suscipit ut libero. Maecenas placerat eros nec diam mattis in laoreet felis laoreet. Mauris id arcu quis nisl dapibus malesuada...</div>
+	
+			<div class="read-more">
+				<div class="button-read">
+					<span class="text-button">Read More</span>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -59,13 +70,56 @@
 
 <div class="connect">
 	<div class="row">
-		<div class="text">
+		<div class="title-text">
 			<h2>Find Me</h2>
 		</div>
-		<div class="twitter social-icon"></div>
-		<div class="github social-icon"></div>
-		<div class="dribble social-icon"></div>
-		<div class="linkedin social-icon"></div>
+
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					<div class="twitter social-icon"></div>
+				</div>
+				<div class="back">
+					<div class="twitter social-icon"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					<div class="github social-icon"></div>
+				</div>
+				<div class="back">
+					<div class="github social-icon"></div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					<div class="linkedin social-icon"></div>
+				</div>
+				<div class="back">
+					<div class="linkedin social-icon"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					<div class="dribble social-icon"></div>
+				</div>
+				<div class="back">
+					<div class="dribble social-icon"></div>
+				</div>
+			</div>
+		</div>
+
+		
 	</div>
 </div>
 
@@ -85,6 +139,7 @@
 	</div>
 </footer>
 
+<div class="hide">
 <div class="bgc">
 <div class="row">
 	<div class="content small-8 small-centered columns">
@@ -118,5 +173,6 @@
 
 
 	</div>
+</div>
 </div>
 </div>
